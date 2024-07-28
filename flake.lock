@@ -1,44 +1,12 @@
 {
   "nodes": {
-    "cdp7": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1678052528,
-        "narHash": "sha256-pRXmbhb/szlMyLTNmdfHpXXZvrGndncvMzsIE4tDf+s=",
-        "owner": "ComposersDesktop",
-        "repo": "CDP7",
-        "rev": "ec867cc2d7aa0d57833cfcc174d36b03f1981e02",
-        "type": "github"
-      },
-      "original": {
-        "owner": "ComposersDesktop",
-        "repo": "CDP7",
-        "type": "github"
-      }
-    },
-    "cdp8": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1698765278,
-        "narHash": "sha256-kkNhsUsrzCR8s71CMRMemZCCekZWbmyXnYxXoaUzks4=",
-        "owner": "ComposersDesktop",
-        "repo": "CDP8",
-        "rev": "7ed65968bc4f33489b55406ab1de455ab567c5d6",
-        "type": "github"
-      },
-      "original": {
-        "owner": "ComposersDesktop",
-        "repo": "CDP8",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1698924604,
-        "narHash": "sha256-GCFbkl2tj8fEZBZCw3Tc0AkGo0v+YrQlohhEGJ/X4s0=",
+        "lastModified": 1722062969,
+        "narHash": "sha256-QOS0ykELUmPbrrUGmegAUlpmUFznDQeR4q7rFhl8eQg=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "fa804edfb7869c9fb230e174182a8a1a7e512c40",
+        "rev": "b73c2221a46c13557b1b3be9c2070cc42cf01eb3",
         "type": "github"
       },
       "original": {
@@ -50,8 +18,6 @@
     },
     "root": {
       "inputs": {
-        "cdp7": "cdp7",
-        "cdp8": "cdp8",
         "nixpkgs": "nixpkgs"
       }
     }

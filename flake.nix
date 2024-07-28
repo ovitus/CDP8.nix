@@ -1,11 +1,21 @@
-{ inputs.cdp7.flake = false;
-  inputs.cdp7.url = "github:ComposersDesktop/CDP7";
-  inputs.cdp8.flake = false;
-  inputs.cdp8.url = "github:ComposersDesktop/CDP8";
-  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-  outputs = { cdp7, cdp8, nixpkgs, self }:
+{ inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+  outputs = { nixpkgs, self }:
   { defaultPackage.x86_64-linux =
     with import nixpkgs { system = "x86_64-linux"; };
+    let 
+      cdp7 = fetchFromGitHub
+      { owner = "ComposersDesktop";
+        repo = "CDP7";
+        rev = "master";
+        hash = "sha256-pRXmbhb/szlMyLTNmdfHpXXZvrGndncvMzsIE4tDf+s=";
+      };
+      cdp8 = fetchFromGitHub
+      { owner = "ComposersDesktop";
+        repo = "CDP8";
+        rev = "main";
+        hash = "sha256-jlotr6RPEbRjWeu5nmNSNL9k/0DF1st9UGszotN+6oY=";
+      };
+    in
     stdenv.mkDerivation
     { name = "CDP 8.0.1";
       buildInputs = [ clang cmake ];
