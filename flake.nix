@@ -13,7 +13,7 @@
       { owner = "ComposersDesktop";
         repo = "CDP8";
         rev = "main";
-        hash = "sha256-jlotr6RPEbRjWeu5nmNSNL9k/0DF1st9UGszotN+6oY=";
+        hash = "sha256-FAb3phI+/MsqLkRYgAIhsyjKtKS39D0VqyhMEecLdi0=";
       };
     in
     stdenv.mkDerivation
